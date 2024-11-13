@@ -1,0 +1,11 @@
+-- database: ./jobs_2023.sqlite
+SELECT
+    salary_hour_avg,
+    job_location
+FROM
+    job_postings_fact
+ORDER BY
+    salary_hour_avg ASC;
+    -- The SELECT and FROM statements arent case sensitive but it is best practice 
+    -- to write in that matter simialar as to how some coding languages have their own naming conventions.
+    --
