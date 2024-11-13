@@ -6,6 +6,6 @@ FROM
     job_postings_fact
 ORDER BY
     salary_hour_avg ASC;
-    -- The SELECT and FROM statements arent case sensitive but it is best practice 
-    -- to write in that matter simialar as to how some coding languages have their own naming conventions.
-    --
+    /*The SELECT and FROM statements arent case sensitive but it is best practice 
+    to write in that matter simialar as to how some coding languages have their own naming conventions.
+    */
