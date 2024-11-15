@@ -27,11 +27,17 @@ FROM
    LIMIT value
 */
 
-SELECT job_location, 
-       AVG(salary_year_avg) AS avg_salary
-FROM 
-       job_postings_fact
-GROUP BY 
-       job_location
-HAVING 
-       AVG(salary_year_avg) > 80000;
+/*Practice Problem 1
+    Question:
+    Get the unique (distinct) job locations in the job_posting_fact table. Order in alphabetic order (basically ascending order).
+
+    SELECT DISTINCT 
+        job_location
+    FROM 
+        job_postings_fact
+    ORDER BY job_location ASC 
+
+    Learnt:
+    put your condition in between BY and [ASC|DESC] do not but it after like its a selection.
+
+*/
