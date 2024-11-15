@@ -41,3 +41,24 @@ FROM
     put your condition in between BY and [ASC|DESC] do not but it after like its a selection.
 
 */
+
+/*Practice Problem 2
+    Question:
+    in the job_postings_fact tablee get the columns job_id, job_title_short,job_location,and job_via columns.
+    And order it in ascending order by job_location.
+
+    
+    SELECT DISTINCT 
+        job_id,
+        job_title_short,
+        job_location,
+        job_via
+    FROM 
+        job_postings_fact
+    ORDER BY job_location ASC 
+    
+    Learnt:
+    put your condition in between BY and [ASC|DESC] do not but it after like its a selection.
+
+*/
+
