@@ -9,3 +9,29 @@ ORDER BY
     /*The SELECT and FROM statements arent case sensitive but it is best practice 
     to write in that matter simialar as to how some coding languages have their own naming conventions.
     */
+
+-- in this query when we use the Distinct keyword we will only be searching for the unique value
+
+SELECT DISTINCT
+    salary_hour_avg
+FROM 
+    job_postings_fact;
+
+/* Order to Write Commands:
+   SELECT (column1, column2 and so forth)...
+   FROM table_name
+   WHERE condition ie column1 = 'Ohio' / or  column2 > 10000
+   GROUP BY column
+   HAVING condition
+   ORDER BY condition1 [ASC|DESC]...
+   LIMIT value
+*/
+
+SELECT job_location, 
+       AVG(salary_year_avg) AS avg_salary
+FROM 
+       job_postings_fact
+GROUP BY 
+       job_location
+HAVING 
+       AVG(salary_year_avg) > 80000;
